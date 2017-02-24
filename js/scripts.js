@@ -32,8 +32,10 @@ $(document).ready(function() {
     event.preventDefault();
 
     var userInput = parseInt($("#userInput").val());
-    var result = runPingPong(userInput);
-    $(".result").html("<li>" + result + "</li>");
+    var results = runPingPong(userInput);
+    results.forEach(function(result) {
+      $(".result").append("<li id='listItems'>" + result + "</li>");
+    });
     $("#output").show();
   });
 });
