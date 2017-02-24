@@ -7,19 +7,30 @@
     <title>Ping-Pong</title>
   </head>
   <body>
-    <div class="container">
+    <div class="container-fluid">
       <div class="jumbotron">
+        <img id="kidsPingPong" src=img/ping.png alt="kids playing ping-pong">
         <h1>Let's Play Ping-Pong</h1>
+      </div>
+      <div class="panel">
+        <h2>Here's how it works:</h2>
+        <h4>Ping-Pong will count up to your number from 1 with the following exceptions:</h3>
+        <ul>
+          <li>Numbers divisible by 3 will be replaced with "ping"</li>
+          <li>Numbers divisible by 5 will be replaced with "pong"</li>
+          <li>Numbers divisible by 15 will be replaced with "ping-pong"</li>
+        </ul>
       </div>
       <form id="pingPong">
         <div class="form-group">
-          <label class="inputLabel" for="userInput">Enter a number:</label>
+          <label class="inputLabel" for="userInput">Enter your number:</label>
           <input class="form-control" type="text" id="userInput">
         </div>
-        <button type="submit" class="btn" id="formSubmit">Submit</button>
+        <button type="submit" class="btn" id="formSubmit">Play</button>
       </form>
       <div id="output">
-        <p><span class="result"></span></p>
+        <span class="result"></span>
+        <img src="img/zappa.jpeg" alt=Zappa playing ping-pong>
       </div>
     </div>
     <script src="js/jquery-3.1.1.js"></script>

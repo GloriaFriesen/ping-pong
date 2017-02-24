@@ -1,40 +1,39 @@
 //business logic
 var runPingPong = function(userInput) {
   var numbers = []
-  var countArray = []
+  var countNumbers = []
 
   for (var index = 0; index < userInput; index ++) {
   	numbers.push(userInput);
   }
 
   for (var i = 0; i < numbers.length; i++) {
-    countArray.push(numbers[i] - i);
+    countNumbers.push(numbers[i] - i);
   }
 
-  for (var i = 0; i < countArray.length; i++) {
-    if ((countArray[i] % 3 === 0) && (countArray[i] % 15 !== 0)){
-      countArray.splice(i, 1, "ping");
-      countArray.reverse();
-    } else if ((countArray[i] % 5 === 0) && (countArray[i] % 15 !== 0)) {
-      countArray.splice(i, 1, "pong");
-      countArray.reverse();
-    } else if (countArray[i] % 15 === 0) {
-      countArray.splice(i, 1, "ping-pong");
-      countArray.reverse();
+  for (var i = 0; i < countNumbers.length; i++) {
+    if ((countNumbers[i] % 3 === 0) && (countNumbers[i] % 15 !== 0)){
+      countNumbers.splice(i, 1, "ping");
+    } else if ((countNumbers[i] % 5 === 0) && (countNumbers[i] % 15 !== 0)) {
+      countNumbers.splice(i, 1, "pong");
+    } else if (countNumbers[i] % 15 === 0) {
+      countNumbers.splice(i, 1, "ping-pong");
     }
   }
-  return countArray;
+
+  return countNumbers.reverse();
 };
 
 //user interface logic
+
+
 $(document).ready(function() {
   $("form#pingPong").submit(function() {
     event.preventDefault();
 
     var userInput = parseInt($("#userInput").val());
     var result = runPingPong(userInput);
-    console.log(result);
-    $(".result").text(result);
+    $(".result").html("<li>" + result + "</li>");
     $("#output").show();
   });
 });

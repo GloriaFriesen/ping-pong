@@ -1,0 +1,40 @@
+#kidsPingPong {
+  height: 350px;
+  width: auto;
+  float: right;
+}
+
+body {
+  background-color: #DCD0C0;
+}
+
+.jumbotron, .panel {
+  background-color: #F4F4F4;
+  color: #C0B283;
+}
+
+#userInput {
+  background-color: #F4F4F4;
+  color: #C0B283;
+  width: 200px;
+}
+
+.panel {
+  padding-left: 60px;
+  padding-bottom: 10px;
+}
+
+button {
+  background-color: #373737;
+  color: #C0B283;
+}
+
+#pingPong {
+  margin: 20px;
+  color: #373737;
+}
+
+#output {
+  color: #373737;
+  padding: 20px;
+}
