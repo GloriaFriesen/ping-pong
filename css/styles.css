@@ -1,16 +1,10 @@
-#kidsPingPong {
-  height: 350px;
-  width: auto;
-  float: right;
-}
-
 body {
-  background-color: #DCD0C0;
+  background-color: #E9E7DA;
 }
 
 .panel {
-  background-color: #F4F4F4;
-  color: #C0B283;
+  background-color: #636846;
+  color: #CDA34F;
   padding-left: 40px;
   padding-bottom: 10px;
   margin-top: 50px;
@@ -19,37 +13,68 @@ body {
 }
 
 #userInput {
-  background-color: #F4F4F4;
+  background-color: #636846;
   color: #C0B283;
-  width: 400px;
+  width: 550px;
+  height: 60px;
   margin-top: 20px;
 }
 
 h1 {
-  color: #373737;
+  color: #373F27;
   font-size: 100px;
+  font-family: 'Bungee Shade', cursive;
+}
+
+h2 {
+  font-family: 'Bungee Shade', cursive;
+}
+
+h4 {
+  font-family: 'Bungee', cursive;
+}
+
+#rules {
+  font-family: 'Yatra One', cursive;
+}
+
+label {
+  font-family: 'Bungee', cursive;
 }
 
 button {
-  background-color: #373737;
-  color: #C0B283;
+  background-color: #373F27;
+  color: #CDA34F;
 }
 
 .btn:hover {
-  color: #F4F4F4;
+  color: #636846;
+}
+
+#output {
+  color: #CDA34F;
+  padding-left: 30px;
+  font-size: 20px;
+  list-style: none;
+  font-family: 'Bungee', cursive;
+}
+
+img {
+  opacity: .8;
 }
 
 #pingPong {
   margin: 20px;
-  color: #373737;
+  color: #373F27;
   font-size: 50px;
 }
 
-#output {
-  color: #C0B283;
-  padding-left: 30px;
-
-}
+#bob {
+  opacity: .8;
+  border-radius: 50%;
+  float: right;
+  margin-top: 20px;
+  }
 
 #zappa {
   opacity: .8;
@@ -57,4 +82,9 @@ button {
   margin-top: 20px;
   margin-right: 40px;
   border-radius: 50%;
+}
+
+#wrongInput {
+  display:none;
+  font-family: 'Bungee', cursive;
 }

@@ -21,7 +21,7 @@ var runPingPong = function(userInput) {
     }
   }
 
-  return countNumbers.reverse();
+  return countNumbers
 };
 
 //user interface logic
@@ -30,12 +30,11 @@ var runPingPong = function(userInput) {
 $(document).ready(function() {
   $("form#pingPong").submit(function() {
     event.preventDefault();
-
+    $(".result > li").remove();
     var userInput = parseInt($("#userInput").val());
     var results = runPingPong(userInput);
     results.forEach(function(result) {
-      $(".result").append("<li id='listItems'>" + result + "</li>");
+      $(".result").prepend("<li>" + result + "</li>");
     });
-    $("#output").show();
   });
 });

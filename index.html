@@ -3,27 +3,28 @@
   <head>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Bungee|Bungee+Shade|Yatra+One" rel="stylesheet">
     <meta charset="utf-8">
     <title>Ping-Pong</title>
   </head>
   <body>
     <div class="container">
       <div class="topOfPage">
-        <img id="zappa" src="img/zappa.jpeg" alt=Zappa playing ping-pong>
+        <img id="zappa" src="img/zappa.png" alt="Zappa playing ping-pong">
         <h1>Let's Play</h1>
         <h1>Ping-Pong</h1>
       </div>
       <div class="panel">
         <h2>Here's how it works:</h2>
         <h4>Ping-Pong will count up to your number from 1 with the following exceptions:</h3>
-        <ul>
+        <ul id="rules">
           <li>Numbers divisible by 3 will be replaced with "ping"</li>
           <li>Numbers divisible by 5 will be replaced with "pong"</li>
           <li>Numbers divisible by 15 will be replaced with "ping-pong"</li>
         </ul>
       </div>
       <form id="pingPong">
-        <img id="kidsPingPong" src=img/ping.png alt="kids playing ping-pong">
+        <img id="bob" src=img/bob.jpg alt="Bob Dylan playing ping-pong">
         <div class="form-group">
           <label class="inputLabel" for="userInput">Enter your number:</label>
           <input class="form-control" type="text" id="userInput">
@@ -32,6 +33,9 @@
       </form>
       <div id="output">
         <span class="result"></span>
+      </div>
+      <div class="panel" id="wrongInput">
+        <h3>Oops, that's not a number</h3>
       </div>
     </div>
     <script src="js/jquery-3.1.1.js"></script>
