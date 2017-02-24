@@ -1,6 +1,6 @@
 # Ping-Pong
 
-#### Ping-Pong, Current Version: 02/24/2017
+#### Current Version: 02/24/2017
 
 #### By Gloria Friesen
 
@@ -36,7 +36,7 @@ This web application will take an inputted number and will display a count up to
 None that I know of.
 
 ## Support and contact details
-Questions? Concerns? Suggestions? Reach out to me via [github]<https://github.com/GloriaFriesen>.
+Questions? Concerns? Suggestions? Reach out to me via github: <https://github.com/GloriaFriesen>.
 
 ## Technologies Used
 * _HTML_
