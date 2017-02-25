@@ -1,6 +1,6 @@
 # Ping-Pong
 
-#### Current Version: 02/24/2017
+#### Ping-Pong with JavaScript, Current Version: 02/24/2017
 
 #### By Gloria Friesen
 
@@ -15,7 +15,7 @@ This web application will take an inputted number and will display a count up to
   * open index.html
 * In browser
   * Enter a number
-  * Click submit to see the result
+  * Click play to see the result
 
 ## Specifications
 
